@@ -1,6 +1,12 @@
-.logo-main {
-    img {
-        width: 105px;
-        height: 105px;
+.logo-main-wrapper {
+    .logo-main {
+        // display: flex;
+        // justify-content: center;
+        // margin-top: 52px;
+
+        img {
+            width: 105px;
+            height: 105px;
+        }
     }
 }
