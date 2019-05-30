@@ -4,11 +4,11 @@ import { connect } from "react-redux";
 class ResultsPosts extends Component {
 	render() {
 		return (
-			<ul className="results-posts">
+			<div className="results-posts">
 				<div className="results-posts__wrapper">
-					<div className="results-posts__posts">Results Go Here</div>
+					<ul className="results-posts__posts">Results Go Here</ul>
 				</div>
-			</ul>
+			</div>
 		);
 	}
 }
