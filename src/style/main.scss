@@ -8,3 +8,22 @@
 .post-topic {
     margin: 0 6px;
 }
+
+html {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.home {
+    height: 100vw;
+    width: 66vw;
+
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    background-color: firebrick;
+    grid-template-rows: 1fr 2fr 1fr;
+}
