@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 
-import { withRouter } from "react-router-dom";  
+import { withRouter } from "react-router-dom";
 
 class SearchBar extends Component {
 	handleFormSubmit = function({ query }) {
-        this.props.onSubmit(query);
+		this.props.onSubmit(query);
 	};
 
 	renderInput(field) {
@@ -15,7 +15,10 @@ class SearchBar extends Component {
 		const { handleSubmit } = this.props;
 		return (
 			<form className="search-bar" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-				<Field name="query" component={this.renderInput} />
+				<div className="search-bar__wrapper">
+					<Field name="query" component={this.renderInput} />
+					<p>Press return to search</p>
+				</div>
 			</form>
 		);
 	}
