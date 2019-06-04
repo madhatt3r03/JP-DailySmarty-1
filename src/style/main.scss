@@ -11,15 +11,6 @@ body {
     justify-content: center;
 }
 
-.home {
-    height: 100vw;
-    width: 66vw;
-    display: grid;
-    align-content: space-around;
-    // justify-items: stretch;
-    // background-color: firebrick;
-    // grid-template-rows: 1fr 2fr 1fr;
-}
 
 .logo-main,
 .recent-posts {
@@ -37,5 +28,9 @@ $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
 $color-blue-one: #0079FF;
 
-@import "./searchBar.scss";
-@import "./recentPosts.scss";
+@import "./mixins";
+@import "./searchBar";
+@import "./recentPosts";
+@import "./post";
+@import "./home";
+@import "./results";
