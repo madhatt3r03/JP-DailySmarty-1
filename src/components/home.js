@@ -1,4 +1,3 @@
-import { fetchPostsWithQuery } from "./../actions/index";
 import React, { Component } from "react";
 
 import Logo from "./logo";
